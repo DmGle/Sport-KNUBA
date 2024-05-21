@@ -1,0 +1,229 @@
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    background-color: var(--dark, #000);
+}
+
+.slide-info-block {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 122px;
+    width: 100%;
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-text {
+    color: var(--white, #fff);
+    font-size: 64px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    color: var(--white, #fff);;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.head-info-section {
+    width: 300px;
+    padding: 13px;
+    margin: 0px auto;
+    border-bottom: 1px solid;
+    text-align: center;
+    font-size: 24px;
+}
+  
+.hp-info-list {
+    padding: 30px;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-news-list {
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.flex-news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+    border: 1px solid gray;
+    min-height: 300px;
+    height: 355px;
+    margin: 0px 5px;
+    border-radius: 15px;
+}
+
+.news-item h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.news-item p {
+    margin-top: 10px;
+}
+
+.carousel-container {
+    margin: 160px 0px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.head-carousel-section {
+    width: 150px;
+    padding: 13px;
+    margin: 0px auto 30px;
+    border-bottom: 1px solid;
+    text-align: center;
+    font-size: 24px;
+}
+  
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.carousel-slide li {
+    flex: 0 0 25%;
+    margin: 0 10px;
+    opacity: 0.5;
+}
+  
+.carousel-slide li:first-child, .carousel-slide li:last-child {
+    flex: 0 0 12.5%;
+}
+  
+.next-arrow, .prev-arrow {
+    position: absolute;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    color: var(--white, #fff);;
+    border: none;
+    cursor: pointer;
+}
+  
+.next-arrow {
+    right: 0;
+}
+  
+.prev-arrow {
+    left: 0;
+}
+
+.prev-arrow:hover, .next-arrow:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.mapa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 160px;
+}
+
+.head-mapa-section {
+    width: 200px;
+    padding: 13px;
+    margin: 0px auto 30px;
+    border-bottom: 1px solid;
+    text-align: center;
+    font-size: 24px;
+}
+
+/**
+ * ----------------------------------------
+ * @animation
+ * ----------------------------------------
+ */
+
+.fade-out {
+	-webkit-animation: fade-out 0.5s ease-out reverse both;
+	        animation: fade-out 0.5s ease-out reverse both;
+    
+    height: 900px;
+    object-fit: cover;
+    width: 100%;
+}
+
+@-webkit-keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 40%;
+    }
+}
+@keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 40%;
+    }
+}
+
+
+.flip-out-ver-right {
+	-webkit-animation: flip-out-ver-right 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+	        animation: flip-out-ver-right 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+}
+
+ @-webkit-keyframes flip-out-ver-right {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotateY(70deg);
+              transform: rotateY(70deg);
+      opacity: 0;
+    }
+  }
+  @keyframes flip-out-ver-right {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotateY(70deg);
+              transform: rotateY(70deg);
+      opacity: 0;
+    }
+  }
+  

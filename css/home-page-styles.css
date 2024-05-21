@@ -4,7 +4,7 @@
 }
 
 .slide {
-    min-width: 100%;
+    /* min-width: 100%; */
     transition: opacity 0.5s ease-in-out;
     background-color: var(--dark, #000);
 }
@@ -15,9 +15,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 122px;
+    top: 284px;
     width: 100%;
-    height: 900px;
+    height: 460px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -29,7 +29,7 @@
 .prev, .next {
     position: absolute;
     top: 40%;
-    width: 40px;
+    /* width: 40px; */
     height: 40px;
     background-color: rgba(0,0,0,0.5);
     color: var(--white, #fff);;
@@ -49,18 +49,30 @@
     background-color: rgba(0,0,0,0.8);
 }
 
+.knuba-sports-complex {
+    margin-top: 80px;
+}
+
 .head-info-section {
-    width: 300px;
+    width: 240px;
     padding: 13px;
     margin: 0px auto;
     border-bottom: 1px solid;
     text-align: center;
     font-size: 24px;
 }
+
+.info-part-even {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 10px auto;
+}
   
 .hp-info-list {
     padding: 30px;
-    min-width: 500px;
+    /* min-width: 500px; */
     display: flex;
     flex-direction: column;
 }
@@ -68,6 +80,7 @@
 .flex-news-list {
     margin: 0px 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -80,8 +93,9 @@
     border: 1px solid gray;
     min-height: 300px;
     height: 355px;
-    margin: 0px 5px;
+    margin: 5px;
     border-radius: 15px;
+    width: 90%;
 }
 
 .news-item h3 {
@@ -94,16 +108,16 @@
 }
 
 .carousel-container {
-    margin: 160px 0px;
+    margin: 60px 0px;
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
 .head-carousel-section {
-    width: 150px;
+    width: 140px;
     padding: 13px;
-    margin: 0px auto 30px;
+    margin: 0px auto 10px;
     border-bottom: 1px solid;
     text-align: center;
     font-size: 24px;
@@ -127,7 +141,7 @@
 .next-arrow, .prev-arrow {
     position: absolute;
     top: 40%;
-    width: 40px;
+    /* width: 40px; */
     height: 40px;
     background-color: rgba(0,0,0,0.5);
     color: var(--white, #fff);;
@@ -152,13 +166,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 160px;
+    margin-top: 60px;
+}
+
+.map-size {
+    height: 500px;
 }
 
 .head-mapa-section {
-    width: 200px;
+    width: 180px;
     padding: 13px;
-    margin: 0px auto 30px;
+    margin: 0px auto 10px;
     border-bottom: 1px solid;
     text-align: center;
     font-size: 24px;
@@ -173,8 +191,8 @@
 .fade-out {
 	-webkit-animation: fade-out 0.5s ease-out reverse both;
 	        animation: fade-out 0.5s ease-out reverse both;
-    
-    height: 900px;
+
+    height: 460px;
     object-fit: cover;
     width: 100%;
 }

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
   
     function updateVisibleSlides() {
-        if (window.innerWidth <= 320) {
+        if (window.innerWidth <= 425) {
             visibleSlides = 1;
         } else {
             visibleSlides = 4;

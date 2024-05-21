@@ -379,3 +379,60 @@ td:nth-child(n+2) {
     align-items: center;
     gap: 30px;
 }
+
+/**
+* ----------------------------------------
+* @ media
+* ----------------------------------------
+*/
+
+@media screen and (min-width: 425px) {
+    .container {
+        width: 395px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 738px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer-white-block {
+        width: 40%;
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 994px;
+    }
+
+    .header-flex {
+        flex-direction: row;
+    }
+
+    .header-address {
+        width: 270px;
+    }
+
+    .footer {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header-address {
+        width: 310px;
+    }
+
+    .footer-white-block {
+        margin-top: 45px;
+    }
+}

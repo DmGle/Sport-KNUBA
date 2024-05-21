@@ -4,7 +4,6 @@
 }
 
 .slide {
-    /* min-width: 100%; */
     transition: opacity 0.5s ease-in-out;
     background-color: var(--dark, #000);
 }
@@ -28,8 +27,8 @@
 
 .prev, .next {
     position: absolute;
-    top: 40%;
-    /* width: 40px; */
+    top: 510px;
+    width: 40px;
     height: 40px;
     background-color: rgba(0,0,0,0.5);
     color: var(--white, #fff);;
@@ -72,7 +71,6 @@
   
 .hp-info-list {
     padding: 30px;
-    /* min-width: 500px; */
     display: flex;
     flex-direction: column;
 }
@@ -141,7 +139,7 @@
 .next-arrow, .prev-arrow {
     position: absolute;
     top: 40%;
-    /* width: 40px; */
+    width: 40px;
     height: 40px;
     background-color: rgba(0,0,0,0.5);
     color: var(--white, #fff);;
@@ -171,6 +169,7 @@
 
 .map-size {
     height: 500px;
+    width: 90%;
 }
 
 .head-mapa-section {
@@ -184,7 +183,7 @@
 
 /**
  * ----------------------------------------
- * @animation
+ * @ animation
  * ----------------------------------------
  */
 
@@ -244,4 +243,99 @@
       opacity: 0;
     }
   }
+
   
+/**
+* ----------------------------------------
+* @ media
+* ----------------------------------------
+*/
+
+@media screen and (min-width: 425px) {
+
+    .slide-info-block {
+        top: 250px;
+    }
+
+    .info-part-even {
+        width: 425px;
+    }
+
+    .head-info-section {
+        width: 300px;
+    }
+
+    .flex-news-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flex-news-item {
+        width: 90%;
+    }
+
+    .next-arrow, .prev-arrow {
+        top: 51.5%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .flex-news-item {
+        width: 40%;
+    }
+
+    .info-part-even {
+        flex-direction: row;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .info-part-even img{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .fade-out {
+        height: 560px;
+    }
+
+    .slide-info-block {
+        top: 122px;
+        height: 560px;
+    }
+
+    .prev, .next {
+        top: 395px;
+    }
+
+    .info-part-even img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .fade-out {
+        height: 760px;
+    }
+
+    .slide-info-block {
+        height: 760px;
+    }
+
+    .prev, .next {
+        top: 440px;
+    }
+
+    .info-part-even img {
+        max-width: 850px;;
+    }
+
+    .flex-news-item {
+        width: 20%;
+    }
+}

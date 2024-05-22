@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
     function updateVisibleSlides() {
         if (window.innerWidth <= 425) {
             visibleSlides = 1;
+        } else if (window.innerWidth <= 1024) {
+            visibleSlides = 2;
         } else {
             visibleSlides = 4;
         }

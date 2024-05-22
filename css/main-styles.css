@@ -56,17 +56,36 @@ img {
 /* ----------Stadium */
 
 .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-flex {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
     padding: 15px;
-    gap: 14px;
+    gap: 15px;
+}
+
+.header-flex a {
+    font-size: 12px;
+}
+
+.nav {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+    font-size: 12px;
+    justify-content: center;
+    background-color: var(--main-color);
 }
 
 .nav-list {
@@ -77,7 +96,7 @@ img {
 }
 
 .nav-list a {
-    font-size: 17px;
+    color: var(--white);
 }
 
 .header-address {
@@ -90,7 +109,7 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
-    height: 40px;
+    height: 30px;
 }
 
 .main-hero {
@@ -248,7 +267,7 @@ td:nth-child(n+2) {
     color: var(--white, #ffffff);
     border-radius: 20px;
     margin: 5px 0px;
-    padding: 12px;
+    padding: 12px 50px;
 }
 
 .footer-botton {
@@ -388,13 +407,25 @@ td:nth-child(n+2) {
 
 @media screen and (min-width: 425px) {
     .container {
-        width: 395px;
+        width: 290px;
+    }
+
+    .header-flex {
+        gap: 50px;
+    }
+
+    .nav-list a {
+        font-size: 14px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .container {
         width: 738px;
+    }
+
+    .header-flex {
+        gap: 100px;
     }
 
     .footer-container {
@@ -414,8 +445,27 @@ td:nth-child(n+2) {
         width: 994px;
     }
 
+    .header {
+        flex-direction: row;
+    }
+
     .header-flex {
         flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav {
+        width: 690px;
+        background-color: transparent;
+    }
+
+    .nav-list {
+        flex-wrap: nowrap
+    }
+
+    .nav-list a {
+        font-size: 16px;
+        color: var(--black, #000000);
     }
 
     .header-address {
@@ -428,6 +478,13 @@ td:nth-child(n+2) {
 }
 
 @media screen and (min-width: 1440px) {
+
+    .header-flex {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 150px;
+    }
+
     .header-address {
         width: 310px;
     }

@@ -6,51 +6,57 @@
     <title>knuba-sport.center</title>
     <link rel="stylesheet" type="text/css" href="../css/main-styles.css">
     <link rel="stylesheet" type="text/css" href="../css/home-page-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/contacts.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
+      <nav class="nav">
+        <div>
+          <ul class="nav-list list">
+            <li>
+              <a class="link tenor-sans-regular" href="../index.html">Головна</a>
+            </li>
+            <li>
+              <a class="link tenor-sans-regular" href="./pool.html">Басeйн</a>
+            </li>
+            <li>
+              <a class="link tenor-sans-regular" href="./stadium.html">Стадіон</a>
+            </li>
+            <li>
+              <a class="link tenor-sans-regular" href="./training-halls.html">Зали</a>
+            </li>
+            <li>
+              <a class="link tenor-sans-regular" href="./contacts.html">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div class="header-flex container">
-        <nav class="nav">
-          <div>
-            <ul class="nav-list list">
-                <li>
-                  <a class="link tenor-sans-regular" href="../index.html">Головна</a>
-                </li>
-                <li>
-                  <a class="link tenor-sans-regular" href="./pool.html">Басайн</a>
-                </li>
-                <li>
-                  <a class="link tenor-sans-regular" href="./stadium.html">Стадіон</a>
-                </li>
-                <li>
-                  <a class="link tenor-sans-regular" href="./training-halls.html">Зали</a>
-                </li>
-                <li>
-                  <a class="link tenor-sans-regular" href="./contacts.html">Контакти</a>
-                </li>
-              </ul>
-          </div>
-        </nav>
         <div class="logo">
-            <img src="../images/KNUBA.png" alt="logo" width="125"/>
+          <img src="../images/KNUBA.png" alt="logo" width="64" />
         </div>
         <address class="header-address">
           <ul class="header-address-list list">
             <li class="header-address-item">
-              <img src="../images/mail.png" alt="mail" width="30"/>
-              <a class="link"
+              <img src="../images/mail.png" alt="mail" width="15" />
+              <a
+                class="link"
                 href="mailto:stadion@knuba-sport.center"
                 class="header-address-link link"
                 >stadion@knuba-sport.center</a
               >
             </li>
             <li class="header-address-item">
-              <img src="../images/phone.png" alt="tel" width="30"/>
-              <a class="link" href="tel:+380501904515" class="header-address-link link"
-                >+38 (050) 1904515</a>
+              <img src="../images/phone.png" alt="tel" width="15" />
+              <a
+                class="link"
+                href="tel:+380501904515"
+                class="header-address-link link"
+                >+38 (050) 1904515</a
+              >
             </li>
           </ul>
         </address>
@@ -96,7 +102,7 @@
             </h3>
             <div class="useful-links-markup">
                 <div class="useful-links-block">
-                    <img src="../images/knuba.jpg" alt="knuba" height="300">
+                    <img src="../images/knuba.jpg" alt="knuba" width="300">
                     <ul class="header-address-list list">
                         <li class="header-address-item">
                             <img src="../images/earth-globe_13881515.png" alt="mail" width="30"/>
@@ -123,7 +129,7 @@
                       </ul>
                 </div>
                 <div  class="useful-links-block">
-                    <img src="../images/sport.jpg" alt="knuba" height="300">
+                    <img src="../images/sport.jpg" alt="knuba" width="300">
                     <ul class="header-address-list list">
                         <li class="header-address-item">
                             <img src="../images/earth-globe_13881515.png" alt="mail" width="30"/>
@@ -153,71 +159,71 @@
         </section>
 
         <section>
-            <div class="mapa">
-                <h3 class="head-mapa-section tenor-sans-regular">
-                    Карта проїзду
-                </h3>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.339382715466!2d30.46963543695932!3d50.42694793131316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf9e100a6275%3A0x2160abe2d069b9df!2z0KLQstGW0Lkg0KHQv9C-0YDRgiDQmtCd0KPQkdCQ!5e0!3m2!1suk!2sua!4v1715766499445!5m2!1suk!2sua"
-                  width="1000"
-                  height="600"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-            </div>
+          <div class="mapa">
+              <h3 class="head-mapa-section tenor-sans-regular">
+                  Мапа проїзду
+              </h3>
+              <div class="map-size">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.339382715466!2d30.46963543695932!3d50.42694793131316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf9e100a6275%3A0x2160abe2d069b9df!2z0KLQstGW0Lkg0KHQv9C-0YDRgiDQmtCd0KPQkdCQ!5e0!3m2!1suk!2sua!4v1715766499445!5m2!1suk!2sua"
+                    style="border: 0; width: 100%; height: 100%;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+              </div>
+          </div>
         </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-container container">
-            <div class="footer-white-block tenor-sans-regular">
-                <ul class="footer-list list">
-                    <li>
-                        <p>03037 Україна, м. Київ,</p>
-                    </li>
-                    <li>
-                        <p>вул. Освіти, 3</p>
-                    </li>
-                    <br/>
-                    <li>
-                        <p>Час роботи:</p>
-                    </li>
-                    <li>
-                        <p>пн-пт з 10:00 до 18:00</p>
-                    </li>
-                    <li>
-                        <p>сб/нд - вихідні</p>
-                    </li>
-                </ul>
-            </div>
-            <div  class="footer-white-block tenor-sans-regular">
-                <ul class="footer-list list">
-                    <li>
-                        <p>звертайтеся за телефоном:</p>
-                    </li>
-                    <li>
-                        <p>+38 050 1904515</p>
-                    </li>
-                    <li>
-                        <p>або e-mail: stadion@knuba-sport.center</p>
-                    </li>
-                    <br/>
-                    <li>
-                        <p>також, замовити дзвінок:</p>
-                    </li>
-                    <li>
-                        <p class="set-number">Вкажіть номер телефону</p>
-                    </li>
-                    <li>
-                        <button class="footer-botton tenor-sans-regular">
-                            Надіслати
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+      </main>
+  
+      <footer class="footer">
+          <div class="footer-container container">
+              <div class="footer-white-block tenor-sans-regular">
+                  <ul class="footer-list list">
+                      <li>
+                          <p>03037 Україна, м. Київ,</p>
+                      </li>
+                      <li>
+                          <p>вул. Освіти, 3</p>
+                      </li>
+                      <br/>
+                      <li>
+                          <p>Час роботи:</p>
+                      </li>
+                      <li>
+                          <p>пн-пт з 10:00 до 18:00</p>
+                      </li>
+                      <li>
+                          <p>сб/нд - вихідні</p>
+                      </li>
+                  </ul>
+              </div>
+              <div  class="footer-white-block tenor-sans-regular">
+                  <ul class="footer-list list">
+                      <li>
+                          <p>звертайтеся за телефоном:</p>
+                      </li>
+                      <li>
+                          <p>+38 050 1904515</p>
+                      </li>
+                      <li>
+                          <p>або e-mail: stadion@knuba-sport.center</p>
+                      </li>
+                      <br/>
+                      <li>
+                          <p>також, замовити дзвінок:</p>
+                      </li>
+                      <li>
+                          <p class="set-number">Вкажіть номер телефону</p>
+                      </li>
+                      <li>
+                          <button class="footer-botton tenor-sans-regular">
+                              Надіслати
+                          </button>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </footer>
   </body>
 </html>

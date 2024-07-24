@@ -1,0 +1,50 @@
+.training-halls-background {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.6), rgba(46, 47, 66, 0.3)), url(../images/taek1.JPG);
+}
+
+.training-halls-main-text {
+    margin: 160px auto;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.section-line {
+    border-top: 2px solid var(--dark, #22428f);
+    border-bottom: 2px solid var(--dark, #22428f);
+    margin: 100px auto
+}
+
+.training-halls-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px auto;
+    gap: 80px;
+}
+
+.training-halls-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 17px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.training-halls-item img {
+    object-fit: contain
+}
+
+.text-pop-up-top {
+    transform: translateY(0);
+    transition: transform 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940), box-shadow 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.text-pop-up-top:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 20px 4px rgba(34, 66, 143, 0.5);
+    cursor: pointer;
+}

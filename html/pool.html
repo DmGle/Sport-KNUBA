@@ -2,60 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>knuba-sport.center</title>
     <link rel="stylesheet" type="text/css" href="../css/main-styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/pool.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <div class="header-flex container">
         <nav class="nav">
           <div>
             <ul class="nav-list list">
-                <li>
-                  <a class="link tenor-sans-regular" href="../index.html">Головна</a>
-                </li>
-                <li>
-                  <a class="link tenor-sans-regular" href="./pool.html">Басайн</a>
-                </li>
-                <li>
-                  <a class="link tenor-sans-regular" href="./stadium.html">Стадіон</a>
-                </li>
-                <li>
-                  <a class="link tenor-sans-regular" href="./training-halls.html">Зали</a>
-                </li>
-                <li>
-                  <a class="link tenor-sans-regular" href="./contacts.html">Контакти</a>
-                </li>
-              </ul>
+              <li>
+                <a class="link tenor-sans-regular" href="../index.html">Головна</a>
+              </li>
+              <li>
+                <a class="link tenor-sans-regular" href="./pool.html">Басeйн</a>
+              </li>
+              <li>
+                <a class="link tenor-sans-regular" href="./stadium.html">Стадіон</a>
+              </li>
+              <li>
+                <a class="link tenor-sans-regular" href="./training-halls.html">Зали</a>
+              </li>
+              <li>
+                <a class="link tenor-sans-regular" href="./contacts.html">Контакти</a>
+              </li>
+            </ul>
           </div>
         </nav>
-        <div class="logo">
-            <img src="../images/KNUBA.png" alt="logo" width="125"/>
+        <div class="header-flex container">
+          <div class="logo">
+            <img src="../images/KNUBA.png" alt="logo" width="64" />
+          </div>
+          <address class="header-address">
+            <ul class="header-address-list list">
+              <li class="header-address-item">
+                <img src="../images/mail.png" alt="mail" width="15" />
+                <a
+                  class="link"
+                  href="mailto:stadion@knuba-sport.center"
+                  class="header-address-link link"
+                  >stadion@knuba-sport.center</a
+                >
+              </li>
+              <li class="header-address-item">
+                <img src="../images/phone.png" alt="tel" width="15" />
+                <a
+                  class="link"
+                  href="tel:+380501904515"
+                  class="header-address-link link"
+                  >+38 (050) 1904515</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
-        <address class="header-address">
-          <ul class="header-address-list list">
-            <li class="header-address-item">
-              <img src="../images/mail.png" alt="mail" width="30"/>
-              <a class="link"
-                href="mailto:stadion@knuba-sport.center"
-                class="header-address-link link"
-                >stadion@knuba-sport.center</a
-              >
-            </li>
-            <li class="header-address-item">
-              <img src="../images/phone.png" alt="tel" width="30"/>
-              <a class="link" href="tel:+380501904515" class="header-address-link link"
-                >+38 (050) 1904515</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header>
+      </header>
 
     <main class="main">
         <section class="main-hero pool-background">
@@ -63,7 +68,7 @@
             <h2 class="main-subtitle tenor-sans-regular container">
                 пропонує заняття плаванням у групах з професійними тренерами для дітей та дорослих. Відвідування басейну можливе у позаучбовий час, тобто з 7:00 до 9:00 та з 17:00 до 22:00.
             </h2>
-            <button class="main-botton tenor-sans-regular">Дізнатись більше</button>
+            <button class="main-botton tenor-sans-regular"><a href="#">Дізнатись більше</a></button>
         </section>
 
       <section class="photo-strip">
@@ -89,26 +94,20 @@
                         <p>- глибина - від 1,1 м до 4,5 м</p>
                     </li>
                     <li>
-                        <p>- вишки - 3 і 5 метрів</p>
+                        <p>- вишки - 3 i 5 метрів</p>
                     </li>
                     <li>
                         <p>- температура води у басейні - 26°</p>
                     </li>
                     </ul>
                 </li>
-                <li>
-                    <p></p>
-                </li>
-                <li>
-                    <p></p>
-                </li>
                 </ul>
     
-                <img src="../images/pool2.jpg" alt="stadion" width="1000"/>
+                <img src="../images/pool2.jpg" alt="stadion" width="300"/>
             </div>
         
             <div class="info-part-even tenor-sans-regular">
-                <img src="../images/pool3.jpg" alt="stadion" width="1000"/>
+                <img src="../images/pool3.jpg" alt="stadion" width="300"/>
                 <ul class="info-part-list list">
                     <li>
                         <h3 class="head-info-pool-doc tenor-sans-regular">
@@ -165,7 +164,7 @@
                         </li>
                     </ul>
                 </div>
-                <img src="../images/pool4.jpg" alt="stadion" width="1000"/>
+                <img src="../images/pool4.jpg" alt="stadion" width="300"/>
             </div>
       </section>
 
@@ -175,14 +174,16 @@
             <table>
                     <thead>
                         <tr class="days-of-the-week">
-                            <th>Часові проміжки</th>
-                            <th>Понеділок</th>
-                            <th>Вівторок</th>
-                            <th>Середа</th>
-                            <th>Четвер</th>
-                            <th>П'ятниця</th>
-                            <th>Субота</th>
-                            <th>Неділя</th>
+                            <th style="
+                                padding: 3px;
+                            ">Часові проміжки</th>
+                            <th>Пн</th>
+                            <th>Вт</th>
+                            <th>Ср</th>
+                            <th>Чт</th>
+                            <th>Пт</th>
+                            <th>Сб</th>
+                            <th>Нд</th>
                         </tr>
                     </thead>
                     <tbody>

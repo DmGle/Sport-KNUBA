@@ -112,6 +112,17 @@ img {
     height: 30px;
 }
 
+.main-headline {
+    color: var(--white);
+    font-size: 24px;
+}
+
+.main-subtitle {
+    color: var(--white);
+    font-size: 14px;
+    line-height: 32px;
+}
+
 .main-hero {
     display: flex;
     align-items: center;
@@ -123,23 +134,16 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 188px 0;
+    padding: 90px 0;
     margin: 0 auto;
 }
 
-.stadium-background {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.6), rgba(46, 47, 66, 0.3)), url(../images/stadion.jpg);
-}
-
-.main-headline {
-    color: var(--white);
-    font-size: 32px;
-}
-
-.main-subtitle {
-    color: var(--white);
-    font-size: 20px;
-    line-height: 32px;
+.head-info-pool-doc {
+    padding: 13px;
+    margin: 20px auto;
+    border-bottom: 1px solid;
+    text-align: center;
+    font-size: 24px;
 }
 
 .main-botton {
@@ -149,17 +153,24 @@ img {
     border-radius: 4px;
     background: var(--main-color, #22428F);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.main-botton a {
     color: var(--white, #ffffff);
     font-size: 16px;
     letter-spacing: 0.04em;
-    cursor: pointer;
     min-width: 169px;
     margin-top: 48px;
 }
 
+.main-botton a:hover {
+    color: var(--white, #ffffff);
+}
+
 .photo-strip {
     margin-top: 160px;
-    display: flex;
+    display: none;
 }
 
 .photo-strip img {
@@ -167,32 +178,39 @@ img {
 }
 
 .main-info-part {
-    margin-top: 160px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     gap: 45px;
 }
 
 .info-part-odd {
-    margin-left: 10%;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 32px;
-    gap: 30px;
+}
+
+.info-part-even{
+    margin: 0 auto;
+}
+
+.info-part-even img{
+    display: none;
 }
 
 .info-part-list {
-    padding: 15px;
-    /* width: 500px; */
+    padding: 15px 15px;
+    width: 280px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
 .main-table {
-    margin-top: 160px;
+    margin-top: 80px;
 }
 
 .stadium-schedule {
@@ -210,7 +228,7 @@ table {
 }
 
 td, th {
-    /* width: 200px; */
+    width: 26px;
     height: 25px;
     text-align: center;
 }
@@ -284,121 +302,6 @@ td:nth-child(n+2) {
     min-width: 169px;
 }
 
-/* ----------Pool */
-
-.pool-background {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.6), rgba(46, 47, 66, 0.3)), url(../images/pool1.JPG);
-}
-
-.head-info-pool-doc {
-    /* width: 200px; */
-    padding: 13px;
-    margin: 20px auto;
-    border-bottom: 1px solid;
-    text-align: center;
-    font-size: 24px;
-}
-
-/* ----------Training Halls */
-
-.training-halls-main-text {
-    margin: 160px auto;
-    /* width: 1410px; */
-    text-align: center;
-    line-height: 1.5;
-}
-
-.section-line {
-    border-top: 2px solid var(--main-color, #22428f);
-    border-bottom: 2px solid var(--main-color, #22428f);
-    /* width: 1410px;  */
-    margin: 100px auto
-}
-
-.training-halls-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    /* width: 1200px; */
-    margin: 160px auto;
-}
-
-.training-halls-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 150px;
-    padding: 17px;
-    border: 2px solid;
-    border-radius: 20px;
-}
-
-.training-halls-item img {
-    object-fit: contain
-}
-
-.text-pop-up-top {
-    transform: translateY(0);
-    transition: transform 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940), box-shadow 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-}
-
-.text-pop-up-top:hover {
-    transform: translateY(-10px);
-    box-shadow: 10px 20px 4px rgba(34, 66, 143, 0.5);
-    cursor: pointer;
-}
-
-
-/* ---------- Contacts */
-
-.main-address-list {
-    display: flex;
-    justify-content: space-evenly
-}
-
-.main-address-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* width: 275px */
-}
-
-.our-contacts-icon {
-    border: 1px solid;
-    border-radius: 100%;
-    /* width: 150px; */
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
-}
-
-.useful-links-headertext {
-    /* width: 250px; */
-    padding: 13px;
-    margin: 160px auto 30px;
-    border-bottom: 1px solid;
-    text-align: center;
-    font-size: 24px;
-}
-
-.useful-links-markup {
-    margin: 0px auto;
-    /* width: 1400px; */
-    display: flex;
-    gap: 30px;
-}
-
-.useful-links-block {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
 /**
 * ----------------------------------------
 * @ media
@@ -426,6 +329,42 @@ td:nth-child(n+2) {
 
     .header-flex {
         gap: 100px;
+    }
+
+    .main-info-part img {
+        width: 400px;
+    }
+
+    .main-info-part {
+        margin-top: 120px;
+    }
+
+    .info-part-odd {
+        flex-direction: row;
+    }
+
+    .info-part-even {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+    }
+
+    .info-part-list {
+        padding: 15px 35px;
+        width: auto;
+    }
+
+    td, th {
+        width: 200px;
+    }
+
+    .photo-strip {
+        display: flex;
+    }
+
+    .info-part-even img{
+        display: block;
     }
 
     .footer-container {
@@ -472,6 +411,10 @@ td:nth-child(n+2) {
         width: 270px;
     }
 
+    .main-info-part img {
+        width: 500px;
+    }
+
     .footer {
         margin-top: 120px;
     }
@@ -487,6 +430,15 @@ td:nth-child(n+2) {
 
     .header-address {
         width: 310px;
+    }
+
+    .main-info-part img {
+        width: 650px;
+    }
+
+    .info-part-odd {
+        justify-content: flex-end;
+        gap: 130px;
     }
 
     .footer-white-block {

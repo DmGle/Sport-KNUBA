@@ -5,57 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>knuba-sport.center</title>
     <link rel="stylesheet" type="text/css" href="../css/main-styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/stadium.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <div class="header-flex container">
         <nav class="nav">
           <div>
             <ul class="nav-list list">
-                <li>
-                  <a class="link tenor-sans-regular" href="../index.html">Головна</a>
-                </li>
-                <li>
-                  <a class="link tenor-sans-regular" href="./pool.html">Басайн</a>
-                </li>
-                <li>
-                  <a class="link tenor-sans-regular" href="./stadium.html">Стадіон</a>
-                </li>
-                <li>
-                  <a class="link tenor-sans-regular" href="./training-halls.html">Зали</a>
-                </li>
-                <li>
-                  <a class="link tenor-sans-regular" href="./contacts.html">Контакти</a>
-                </li>
-              </ul>
+              <li>
+                <a class="link tenor-sans-regular" href="../index.html">Головна</a>
+              </li>
+              <li>
+                <a class="link tenor-sans-regular" href="./pool.html">Басeйн</a>
+              </li>
+              <li>
+                <a class="link tenor-sans-regular" href="./stadium.html">Стадіон</a>
+              </li>
+              <li>
+                <a class="link tenor-sans-regular" href="./training-halls.html">Зали</a>
+              </li>
+              <li>
+                <a class="link tenor-sans-regular" href="./contacts.html">Контакти</a>
+              </li>
+            </ul>
           </div>
         </nav>
-        <div class="logo">
-            <img src="../images/KNUBA.png" alt="logo" width="125"/>
+        <div class="header-flex container">
+          <div class="logo">
+            <img src="../images/KNUBA.png" alt="logo" width="64" />
+          </div>
+          <address class="header-address">
+            <ul class="header-address-list list">
+              <li class="header-address-item">
+                <img src="../images/mail.png" alt="mail" width="15" />
+                <a
+                  class="link"
+                  href="mailto:stadion@knuba-sport.center"
+                  class="header-address-link link"
+                  >stadion@knuba-sport.center</a
+                >
+              </li>
+              <li class="header-address-item">
+                <img src="../images/phone.png" alt="tel" width="15" />
+                <a
+                  class="link"
+                  href="tel:+380501904515"
+                  class="header-address-link link"
+                  >+38 (050) 1904515</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
-        <address class="header-address">
-          <ul class="header-address-list list">
-            <li class="header-address-item">
-              <img src="../images/mail.png" alt="mail" width="30"/>
-              <a class="link"
-                href="mailto:stadion@knuba-sport.center"
-                class="header-address-link link"
-                >stadion@knuba-sport.center</a
-              >
-            </li>
-            <li class="header-address-item">
-              <img src="../images/phone.png" alt="tel" width="30"/>
-              <a class="link" href="tel:+380501904515" class="header-address-link link"
-                >+38 (050) 1904515</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header>
+      </header>
+
 
     <main class="main">
         <section class="main-hero stadium-background">
@@ -66,7 +72,7 @@
                 інфраструктурою для проведення спортивних заходів - футбольних матчів,
                 турнірів, чемпіонатів та тренувань.
             </h2>
-            <button class="main-botton tenor-sans-regular">Дізнатись більше</button>
+            <button class="main-botton tenor-sans-regular"><a href="#">Дізнатись більше</a></button>
         </section>
 
       <section class="photo-strip">
@@ -104,11 +110,11 @@
                 </li>
                 </ul>
     
-                <img src="../images/stadion5.jpg" alt="stadion" width="1000"/>
+                <img src="../images/stadion5.jpg" alt="stadion" width="300"/>
             </div>
         
             <div class="info-part-even tenor-sans-regular">
-                <img src="../images/stadion6.jpg" alt="stadion" width="1000"/>
+                <img src="../images/stadion6.jpg" alt="stadion" width="300"/>
                 <ul class="info-part-list list">
                 <li>
                     <p>
@@ -148,24 +154,26 @@
                         </li>
                     </ul>
                 </div>
-                <img src="../images/stadion7.jpg" alt="stadion" width="1000"/>
+                <img src="../images/stadion7.jpg" alt="stadion" width="300"/>
             </div>
       </section>
 
       <section class="main-table container">
-        <h2 class="stadium-schedule tenor-sans-regular">Розклад стадіону</h2>
+        <h2 class="stadium-schedule tenor-sans-regular">Розклад басейну</h2>
         <div class="table-border tenor-sans-regular" role="region" tabindex="0">
             <table>
                     <thead>
                         <tr class="days-of-the-week">
-                            <th>Часові проміжки</th>
-                            <th>Понеділок</th>
-                            <th>Вівторок</th>
-                            <th>Середа</th>
-                            <th>Четвер</th>
-                            <th>П'ятниця</th>
-                            <th>Субота</th>
-                            <th>Неділя</th>
+                            <th style="
+                                padding: 3px;
+                            ">Часові проміжки</th>
+                            <th>Пн</th>
+                            <th>Вт</th>
+                            <th>Ср</th>
+                            <th>Чт</th>
+                            <th>Пт</th>
+                            <th>Сб</th>
+                            <th>Нд</th>
                         </tr>
                     </thead>
                     <tbody>
